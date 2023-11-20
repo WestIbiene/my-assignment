@@ -18,7 +18,8 @@
       box-sizing: border-box;
     }
     body {
-      height: 100vh;
+      min-height: 100vh;
+      padding: 40px 0;
       display: grid;
       place-items: center;
       background-color: lightpink;
@@ -64,6 +65,34 @@
 
     h1 {
       font-family: 'Fraunces';
+    }
+
+    @media screen and (max-width: 600px) {
+      main {
+      flex-direction: column;
+      width: 80%;
+      height: 120vh;
+    }
+    .section1, .section2 {
+      width: 100%;
+    }
+    .section1 img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0;
+    }
+    .section2 {
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 10px;
+    }
+    .section1 {
+      height: 40vh;
+    }
+
+    .section2 {
+      height: 80vh;
+    }
     }
   </style>
 </head>
