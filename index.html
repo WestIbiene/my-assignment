@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      display: grid;
+      place-items: center;
+      background-color: lightpink;
+    }
+    main {
+      display: flex;
+      border:none;
+      width: 60%;
+      height: 70vh;
+    }
+    .section1 {
+      height: inherit;
+     border: 5px;
+     width: 50%;
+    }
+    .section1 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .section2 {
+      background: rgb(255, 255, 255);
+      padding: 30px;
+      height: inherit;
+      width: 50%;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .button {
+      color: white;
+      background-color:rgb(75, 172, 101);
+      font-size: 15px;
+      padding: 15px;
+      border:none;
+      border-radius: 7px;
+      width: 100%;
+    }
+
+    h1 {
+      font-family: 'Fraunces';
+    }
+  </style>
+</head>
+<body>
+
+<main>
+  <div class="section1">
+    <img src="images/image-product-desktop.jpg" />
+  </div>
+  <div class="section2">
+   <p style="border:20px; font-family: 'Montserrat'; letter-spacing: 5px;"> Perfume</p>
+ 
+    <h1 style="border:50px;">Gabrielle Essence Eau De Parfum</h1>
+  
+    <p style="font-family: 'Montserrat';">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+    Perfumer-Creator for the House of CHANEL.</p>
+  
+    <p>
+      <span style="font-size: xx-large; color:rgb(75, 172, 101); font-family: 'Fraunces';">$149.99</span>
+
+    <span style="text-decoration: line-through; font-size:small;font-family: 'Montserrat';">$169.99</span></p>
+  
+    <button class="button" style="font-family: 'Montserrat';">Add to Cart</button>
+  </div>
+</main>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
